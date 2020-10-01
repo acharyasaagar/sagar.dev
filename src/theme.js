@@ -60,7 +60,7 @@ let theme = createMuiTheme({
     },
     h6: {
       fontFamily: SANS_FONT_FAMILY,
-      fontWeight: 600,
+      fontWeight: 700,
       fontSize: '1rem',
       lineHeight: 1.5,
       letterSpacing: '0.0625em',
@@ -81,10 +81,10 @@ let theme = createMuiTheme({
     },
     button: {
       fontFamily: SANS_FONT_FAMILY,
-      fontWeight: 400,
+      fontWeight: 500,
       fontSize: '0.75rem',
-      lineHeight: 1.5,
-      letterSpacing: '0.035em',
+      lineHeight: 2,
+      letterSpacing: '0.07185em',
     },
     caption: {
       fontFamily: SANS_FONT_FAMILY,
@@ -96,6 +96,19 @@ let theme = createMuiTheme({
   },
 })
 
+theme.overrides.MuiButton = {
+  root: {
+    height: '2.75rem',
+    borderRadius: '99px',
+  },
+  label: {
+    fontSize: '0.75rem',
+    lineHeight: 2,
+  },
+  sizeLarge: {
+    height: '3.25rem',
+  },
+}
 theme = responsiveFontSizes(theme)
 
 export default theme
