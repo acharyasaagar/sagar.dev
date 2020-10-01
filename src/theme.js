@@ -53,7 +53,7 @@ let theme = createMuiTheme({
     },
     h5: {
       fontFamily: SANS_FONT_FAMILY,
-      fontWeight: 400,
+      fontWeight: 600,
       fontSize: '1.25rem',
       lineHeight: 1.6,
       letterSpacing: '0.05em',
@@ -92,6 +92,13 @@ let theme = createMuiTheme({
       fontSize: '0.75rem',
       lineHeight: 2,
       letterSpacing: '0.15em',
+    },
+    subtitle1: {
+      fontFamily: SANS_FONT_FAMILY,
+      fontWeight: 600,
+      fontSize: '1rem',
+      lineHeight: 2,
+      letterSpacing: '0.015em',
     },
   },
 })
