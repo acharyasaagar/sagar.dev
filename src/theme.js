@@ -25,10 +25,10 @@ let theme = createMuiTheme({
   typography: {
     h1: {
       fontFamily: SANS_FONT_FAMILY,
-      fontWeight: 700,
-      fontSize: '2.5rem',
+      fontWeight: 800,
+      fontSize: '3rem',
       lineHeight: 1.6,
-      letterSpacing: '-0.00625em',
+      letterSpacing: '-0.0021875em',
     },
     h2: {
       fontFamily: SANS_FONT_FAMILY,
@@ -46,9 +46,9 @@ let theme = createMuiTheme({
     },
     h4: {
       fontFamily: SANS_FONT_FAMILY,
-      fontWeight: 600,
+      fontWeight: 500,
       fontSize: '1.25rem',
-      lineHeight: 1.6,
+      lineHeight: 1.5,
       letterSpacing: '0.0025em',
     },
     h5: {
