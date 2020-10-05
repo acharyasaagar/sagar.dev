@@ -4,6 +4,8 @@ import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles(theme => ({
   container: {
+    width: '15rem',
+    height: '15rem',
     maxWidth: '15rem',
     maxHeight: '15rem',
     margin: theme.spacing(3, 0),
