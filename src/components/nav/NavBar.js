@@ -18,6 +18,11 @@ const useStyles = makeStyles(theme => ({
     margin: 0,
     display: 'flex',
     alignItems: 'center',
+    justifyContent: 'center',
+    [theme.breakpoints.up('md')]: {
+      justifyContent: 'flex-start',
+      height: `calc(1.5 * ${NAVBAR_HEIGHT})`,
+    },
   },
 }))
 
