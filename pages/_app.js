@@ -12,13 +12,14 @@ const MyApp = props => {
 
   const removeServerInjectedStyles = () => {
     const jssStyles = document.querySelector('#jss-server-side')
+
     if (jssStyles) {
       jssStyles.parentElement.removeChild(jssStyles)
     }
   }
 
   useEffect(() => {
-    removeServerInjectedStyles
+    removeServerInjectedStyles()
   }, [])
 
   return (
