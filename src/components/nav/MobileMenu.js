@@ -56,6 +56,7 @@ const MobileMenuDrawer = props => {
       anchor="top"
       open={open}
       className={classes.drawerPaper}
+      onClose={handleDrawerClose}
     >
       <div className={classes.drawerHeader}>
         <IconButton onClick={handleDrawerClose} color="primary">
@@ -65,7 +66,11 @@ const MobileMenuDrawer = props => {
       <Divider />
       <List className={classes.listRoot}>
         {menuItems?.map(menu => (
-          <ListItemLink key={menu.title} href={menu.href}>
+          <ListItemLink
+            key={menu.title}
+            href={menu.href}
+            onClick={handleDrawerClose}
+          >
             <ListItemText
               primary={menu.title}
               primaryTypographyProps={listTextTypography}
