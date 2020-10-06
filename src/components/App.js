@@ -1,32 +1,39 @@
 import React from 'react'
-import Head from 'next/head'
 
 import Container from '@material-ui/core/Container'
-import CssBaseline from '@material-ui/core/CssBaseline'
+
+import Divider from '@material-ui/core/Divider'
 import { makeStyles } from '@material-ui/core/styles'
-import { Typography } from '@material-ui/core'
 
 const useStyles = makeStyles(theme => ({
-  container: {
-    width: '100vw',
-    minHeight: '100vh',
-    background: theme.palette.background.default,
+  appContainer: {
+    padding: theme.spacing(2, 4),
   },
 }))
+
+import NavBar from './nav/NavBar'
+import Hero from './hero/Hero'
+import About from './about/About'
+import Skills from './skills/Skills'
+import Projects from './projects/Project'
+import Certifications from './certifications/Certifications'
 
 const App = () => {
   const classes = useStyles()
   return (
     <>
-      <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
-          rel="stylesheet"
-        />
-      </Head>
-      <CssBaseline></CssBaseline>
       {/*  Application container */}
-      <Container></Container>
+      <Container maxWidth="lg" className={classes.appContainer}>
+        <NavBar />
+        <Hero />
+        <About />
+        <Divider />
+        <Skills />
+        <Divider />
+        <Projects />
+        <Divider />
+        <Certifications />
+      </Container>
     </>
   )
 }
