@@ -1,6 +1,7 @@
 export { default as CodeSlash } from './CodeSlash'
 export { default as Curly } from './Curly'
 export { default as Design } from './Design'
+export { default as DownloadIcon } from './DownloadIcon'
 export { default as Github } from './Github'
 export { default as Illustration } from './Illustration'
 export { default as Menu } from './Menu'
