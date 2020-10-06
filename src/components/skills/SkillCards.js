@@ -9,6 +9,7 @@ import mySkills from './mySkills'
 
 const useStyles = makeStyles(theme => ({
   skillCardsContainer: {
+    paddingTop: theme.spacing(5),
     [theme.breakpoints.up('md')]: {
       flexDirection: 'row',
       justifyContent: 'space-between',

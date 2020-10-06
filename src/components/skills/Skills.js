@@ -8,14 +8,14 @@ import SkillCards from './SkillCards'
 
 const useStyles = makeStyles(theme => ({
   skillsContainer: {
-    padding: theme.spacing(5, 0),
+    padding: theme.spacing(8, 0),
   },
 }))
 
 const Skills = () => {
   const classes = useStyles()
   return (
-    <div className={classes.skillsContainer}>
+    <div className={classes.skillsContainer} id="skills">
       <Grid container direction="column">
         <Grid item>
           <SkillsHeader />
