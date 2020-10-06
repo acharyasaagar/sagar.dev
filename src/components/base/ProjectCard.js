@@ -15,6 +15,7 @@ const useStyles = makeStyles(theme => ({
   cardContainer: {
     position: 'relative',
     maxWidth: '20rem',
+    marginBottom: theme.spacing(3),
   },
   media: {
     height: 250,
@@ -22,7 +23,7 @@ const useStyles = makeStyles(theme => ({
 }))
 
 const ProjectCard = props => {
-  const { imgSrc, title, subtitle, githubURL, demoURL } = props
+  const { imgSrc, title, subtitle, githubURL, demoURL } = props.project
   const classes = useStyles()
 
   return (
