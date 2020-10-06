@@ -10,6 +10,7 @@ import AboutContent from './AboutContent'
 const useStyles = makeStyles(theme => ({
   aboutContainer: {
     textAlign: 'center',
+    paddingBottom: theme.spacing(5),
     [theme.breakpoints.up('md')]: {
       textAlign: 'left',
     },
