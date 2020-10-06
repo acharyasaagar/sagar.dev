@@ -32,7 +32,7 @@ const useStyles = makeStyles(theme => ({
 }))
 
 const SkillCard = props => {
-  const { AvatarIcon, skillTitle, skillText, toolsTitle, tools } = props
+  const { AvatarIcon, skillTitle, skillText, toolsTitle, tools } = props.skill
   const classes = useStyles()
   return (
     <Paper elevation={0} variant="outlined" className={classes.root}>
@@ -51,7 +51,7 @@ const SkillCard = props => {
         {toolsTitle}
       </Typography>
       <Grid direction="column" alignItems="center" container spacing={1}>
-        {tools.map(tool => (
+        {tools?.map(tool => (
           <Grid item key={tool}>
             <Typography variant="button" color="primary">
               {tool}
