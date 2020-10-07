@@ -26,16 +26,12 @@ const useStyles = makeStyles(theme => ({
   },
   drawerPaper: {
     width: drawerWidth,
-    textAlign: 'center',
   },
   drawerHeader: {
-    padding: theme.spacing(1.5, 1),
+    padding: theme.spacing(1.5, 2),
   },
   listRoot: {
-    paddingLeft: theme.spacing(1),
-    '& a': {
-      textAlign: 'center',
-    },
+    paddingLeft: theme.spacing(2),
   },
 }))
 

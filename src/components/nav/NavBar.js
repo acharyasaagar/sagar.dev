@@ -18,7 +18,6 @@ const useStyles = makeStyles(theme => ({
     margin: 0,
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'center',
     [theme.breakpoints.up('md')]: {
       justifyContent: 'flex-start',
       height: `calc(1.5 * ${NAVBAR_HEIGHT})`,
@@ -30,10 +29,10 @@ const NavBar = () => {
   const classes = useStyles()
   return (
     <div className={classes.navBarContainer}>
-      <Hidden xsDown implementation="css">
+      <Hidden smDown implementation="css">
         <DesktopMenu menuItems={menuItems} />
       </Hidden>
-      <Hidden smUp implementation="css">
+      <Hidden mdUp implementation="css">
         <MobileMenu menuItems={menuItems} />
       </Hidden>
     </div>

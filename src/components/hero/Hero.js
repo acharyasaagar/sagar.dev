@@ -9,7 +9,8 @@ import HeroImage from './HeroImage'
 
 const useStyles = makeStyles(theme => ({
   heroHeight: {
-    height: `calc(100vh - 48px - ${NAVBAR_HEIGHT}) `,
+    height: `calc(100vh - ${NAVBAR_HEIGHT}) `,
+    minHeight: '50rem',
   },
   heroContainer: {
     minHeight: '100%',

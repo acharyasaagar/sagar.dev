@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography'
 import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles(theme => ({
-  headingContainer: { paddingTop: theme.spacing(2) },
+  headingContainer: { paddingTop: theme.spacing(0.5) },
   heroContentHeader: {
     marginBottom: theme.spacing(3),
   },
@@ -50,8 +50,10 @@ const HeroText = () => {
       color="textSecondary"
       className={classes.heroContentText}
     >
-      I am a full stack software developer with a degree in software engineering
-      and various certifications on web application development.
+      I am a full stack software developer with a strong passion for bringing
+      ideas into life through coding. With hands-on experience from several
+      hobby projects and the motivation to learn and build more cool things, I
+      am looking for my first professional role as software developer.
     </Typography>
   )
 }
@@ -61,12 +63,17 @@ const HeroActions = () => {
   return (
     <Grid
       container
-      spacing={3}
+      spacing={1}
       justify="center"
       className={classes.heroActions}
     >
       <Grid item>
-        <Button variant="contained" color="primary" disableElevation>
+        <Button
+          variant="contained"
+          color="primary"
+          href="#projects"
+          disableElevation
+        >
           See Projects
         </Button>
       </Grid>
