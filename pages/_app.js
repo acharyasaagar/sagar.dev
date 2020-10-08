@@ -25,10 +25,21 @@ const MyApp = props => {
   return (
     <>
       <Head>
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1"
         ></meta>
+        <meta
+          name="description"
+          content="Sagar Acharya is a full stack software developer based in Helsinki. He loves bringing ideas into reality through coding."
+        ></meta>
+        <meta
+          name="keywords"
+          content="Software developers in Helsinki, Web Developers in Helsinki"
+        ></meta>
+        <meta name="author" content="Sagar Acharya"></meta>
+        <title>Sagar Acharya - Full stack developer</title>
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />

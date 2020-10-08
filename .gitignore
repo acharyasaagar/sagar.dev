@@ -2,4 +2,4 @@
 *.env
 .next
 /out
-
+/favicon
