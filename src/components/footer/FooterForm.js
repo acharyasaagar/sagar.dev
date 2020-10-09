@@ -55,9 +55,6 @@ const FooterForm = () => {
   const [snackBar, setSnackBar] = useState({ open: false })
 
   const closeSnackBar = (e, reason) => {
-    if (reason === 'clickaway') {
-      return
-    }
     setSnackBar({ open: false })
   }
 
