@@ -17,6 +17,7 @@ import About from './about/About'
 import Skills from './skills/Skills'
 import Projects from './projects/Project'
 import Certifications from './certifications/Certifications'
+import Footer from './footer/Footer'
 
 const App = () => {
   const classes = useStyles()
@@ -34,6 +35,7 @@ const App = () => {
         <Divider />
         <Certifications />
       </Container>
+      <Footer />
     </>
   )
 }
