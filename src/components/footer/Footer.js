@@ -23,7 +23,7 @@ const useStyles = makeStyles(theme => ({
 const Footer = () => {
   const classes = useStyles()
   return (
-    <div className={classes.footerContainer}>
+    <div className={classes.footerContainer} id="contact">
       <Container maxWidth="lg">
         <Grid
           container

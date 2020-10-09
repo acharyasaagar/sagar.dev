@@ -78,7 +78,7 @@ const HeroActions = () => {
         </Button>
       </Grid>
       <Grid item>
-        <Button variant="outlined" color="primary">
+        <Button variant="outlined" color="primary" href="#contact">
           Contact me
         </Button>
       </Grid>
