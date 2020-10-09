@@ -75,7 +75,7 @@ const FooterForm = () => {
         body: JSON.stringify({ name, email, message }),
       })
       if (res.status === 200) {
-        setSnackBar({
+        return setSnackBar({
           open: true,
           severity: 'success',
           message: 'Message sent',
@@ -114,7 +114,7 @@ const FooterForm = () => {
         />
         <Textfield
           label="Your Email"
-          // type="email"
+          type="email"
           placeholder="acharyasagar@mail.com"
           variant="filled"
           required
