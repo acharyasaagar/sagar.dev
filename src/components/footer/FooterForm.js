@@ -72,6 +72,9 @@ const FooterForm = () => {
         body: JSON.stringify({ name, email, message }),
       })
       if (res.ok) {
+        setName('')
+        setEmail('')
+        setMessage('')
         return setSnackBar({
           open: true,
           severity: 'success',
@@ -89,9 +92,6 @@ const FooterForm = () => {
         onClose: closeSnackBar,
       })
     }
-    setName('')
-    setEmail('')
-    setMessage('')
   }
   return (
     <div className={classes.formContainer}>
