@@ -74,8 +74,8 @@ const FooterForm = () => {
         method: 'POST',
         body: JSON.stringify({ name, email, message }),
       })
-      if (res.status === 200) {
-        setSnackBar({
+      if (res.ok) {
+        return setSnackBar({
           open: true,
           severity: 'success',
           message: 'Message sent',
@@ -114,7 +114,7 @@ const FooterForm = () => {
         />
         <Textfield
           label="Your Email"
-          // type="email"
+          type="email"
           placeholder="acharyasagar@mail.com"
           variant="filled"
           required
@@ -141,6 +141,7 @@ const FooterForm = () => {
             type="submit"
             startIcon={<TelegramIcon />}
             className={classes.sendButton}
+            disableElevation
           >
             Send message
           </Button>
