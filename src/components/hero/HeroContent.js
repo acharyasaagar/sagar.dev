@@ -51,9 +51,8 @@ const HeroText = () => {
       className={classes.heroContentText}
     >
       I am a full stack software developer with a strong passion for bringing
-      ideas into life through coding. With hands-on experience from several
-      hobby projects and the motivation to learn and build more cool things, I
-      am looking for my first professional role as software developer.
+      ideas into life through coding. I am currently working for StarBrix to
+      create a project management software.
     </Typography>
   )
 }
