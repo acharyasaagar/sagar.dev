@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Social from '../base/Social'
 import Grid from '@material-ui/core/Grid'
 import Hidden from '@material-ui/core/Hidden'
 import Typography from '@material-ui/core/Typography'
@@ -25,14 +25,13 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
-import Social from '../base/Social'
 
 const FooterBody = () => {
   const classes = useStyles()
   return (
     <div className={classes.footerBodyContainer}>
       <Grid container direction="column" className={classes.gridContainer}>
-        <Grid item xs={12}>
+        <Grid item>
           <Typography
             variant="h3"
             component="h3"
