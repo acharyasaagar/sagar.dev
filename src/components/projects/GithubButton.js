@@ -6,7 +6,28 @@ import GitHub from '@material-ui/icons/GitHub'
 
 import { makeStyles } from '@material-ui/core/styles'
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
+  buttonContainer: {
+    backgroundImage: `url('/images/github-contributions.png')`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center center',
+    width: '100%',
+    height: '100%',
+    position: 'relative',
+    padding: theme.spacing(8, 0),
+  },
+  overlay: {
+    position: 'absolute',
+    backgroundColor: '#fff',
+    top: 0,
+    bottom: 0,
+    left: 0,
+    right: 0,
+    opacity: '0.7',
+    borderRadius: theme.spacing(),
+    border: `1px solid ${theme.palette.grey[200]}`,
+  },
   githubButton: {
     transition: 'background-color 0.3s, color 0.5s',
     '&:hover': {
@@ -20,13 +41,19 @@ const useStyles = makeStyles(theme => ({
 const GithubButton = () => {
   const classes = useStyles()
   return (
-    <Grid container justify="center" alignItems="center">
+    <Grid
+      container
+      justify="center"
+      alignItems="center"
+      className={classes.buttonContainer}
+    >
+      <div className={classes.overlay}></div>
       <Grid item>
         <Button
-          variant="outlined"
+          variant="contained"
           color="primary"
           startIcon={<GitHub />}
-          href="https://github.com/acharyasagar"
+          href="https://github.com/acharyasaagar"
           target="_blank"
           size="large"
           className={classes.githubButton}
