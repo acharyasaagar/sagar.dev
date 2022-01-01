@@ -7,7 +7,7 @@ import CertificationsHeader from './CertificationsHeader'
 import CertificationCards from './CertificationCards'
 import DownloadCVButton from './DownloadCVButton'
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   certificationsContainer: {
     padding: theme.spacing(8, 0),
   },
