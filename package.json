@@ -2,6 +2,7 @@
   "name": "sagar.dev",
   "version": "1.0.0",
   "description": "",
+  "license": "UNLICENSED",
   "scripts": {
     "build": "next build",
     "dev": "next dev",
